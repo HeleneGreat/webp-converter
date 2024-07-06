@@ -1,0 +1,116 @@
+:root {
+    --primary: #324933;
+    --secondary: #F5EFE1;
+    --tertiary: #FD6035;
+    --black: #1F1E1A;
+    --white: #FFF;
+}
+
+@font-face {
+    font-family: 'post_no_bills_colombomedium';
+    src: url(fonts/postnobillscolombo-medium-webfont.woff) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+    text-decoration: none;
+    color: var(--primary);
+    font-family: sans-serif;
+}
+body{
+    background-color: var(--secondary);
+    margin: 50px 0;
+}
+h1{
+    font-size: 48px;
+    padding-bottom: 20px;
+    font-family: 'post_no_bills_colombomedium';
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.btn{
+    background-color: var(--tertiary);
+    color: var(--white);
+    padding: 8px 30px;
+    font-size: 30px;
+    line-height: 35px;
+    font-family: 'post_no_bills_colombomedium', sans-serif;
+}
+.btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.btn.back{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@media screen and (min-width:993px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:1201px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* File upload from https://uiverse.io/vinodjangid07/dull-dragonfly-5 */
+.file-upload-form {
+    margin: 30px auto 50px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.file-upload-label input {
+    display: none;
+}
+.file-upload-label svg {
+    height: 50px;
+    fill: var(--primary);
+    margin-bottom: 20px;
+}
+.file-upload-label {
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 30px 70px;
+    border-radius: 40px;
+    border: 2px dashed var(--primary);
+    box-shadow: 0px 0px 200px -50px rgba(0, 0, 0, 0.719);
+}
+.file-upload-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.browse-button {
+    background-color: var(--primary);
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s;
+}
+.browse-button:hover {
+    background-color: rgb(14, 14, 14);
+}
+  
