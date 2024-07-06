@@ -74,7 +74,7 @@ h1{
 /* File upload from https://uiverse.io/vinodjangid07/dull-dragonfly-5 */
 .file-upload-form {
     margin: 30px auto 50px;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     display: flex;
     align-items: center;
@@ -114,3 +114,36 @@ h1{
     background-color: rgb(14, 14, 14);
 }
   
+
+/* File preview */
+.file-upload-form{
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.file-upload-form .file-upload-label,
+.file-upload-form #preview-container {
+    width: 40%;
+    max-height: 100%;
+    max-width: 200px;
+}
+.file-upload-form #preview-container #preview{
+    max-height: 215px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+}
+
+/* Download file */
+#download img{
+    max-height: 215px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+#download p{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
